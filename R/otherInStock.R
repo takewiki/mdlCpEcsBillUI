@@ -43,12 +43,12 @@ otherInStockUI_left <- function() {
 
   res <- tagList(
     tsui::mdl_ListChoose1(id ="otherInStockERP",label =  "ERP账套名",
-                          choiceNames = list("赛普集团新账套"),
-                          choiceValues =list("赛普集团新账套"),selected = list("赛普集团新账套")),
+                          choiceNames = list("DFRobot新账套"),
+                          choiceValues =list("DFRobot新账套"),selected = list("DFRobot新账套")),
 
     # selectInput(inputId = "otherInStockERP",
     #             label = "ERP账套名",
-    #             choices = c("赛普集团新账套", "测试账套")),
+    #             choices = c("DFRobot新账套", "测试账套")),
     tsui::mdl_text(id = 'txt_otherInStockSourceSync_manually',label = '请输入其他入库单号'),
     shinyWidgets::actionBttn(inputId = 'btn_otherInStockSourceSync_log',label = '日志查询'),
     shinyWidgets::actionBttn(inputId = 'btn_otherInStockSourceSync_update',label = '更新同步状态'),
@@ -83,8 +83,8 @@ otherInStockUI_left <- function() {
 otherInStockUI_right <- function() {
   res <- tagList(
     tsui::mdl_ListChoose1(id ="otherInStockERP2",label =  "ERP账套名",
-                          choiceNames = list("赛普集团新账套"),
-                          choiceValues =list("赛普集团新账套"),selected = list("赛普集团新账套")),
+                          choiceNames = list("DFRobot新账套"),
+                          choiceValues =list("DFRobot新账套"),selected = list("DFRobot新账套")),
     tsui::mdl_text(id = 'txt_otherInStockERP_manually',label = '请输入其他入库单号'),
     shinyWidgets::actionBttn(inputId = 'btn_otherInStockERP_manually',label = '按单查询'),
 

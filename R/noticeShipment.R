@@ -43,12 +43,12 @@ noticeShipmentUI_left <- function() {
 
   res <- tagList(
     tsui::mdl_ListChoose1(id ="noticeShipmentERP",label =  "ERP账套名",
-                          choiceNames = list("赛普集团新账套"),
-                          choiceValues =list("赛普集团新账套"),selected = list("赛普集团新账套")),
+                          choiceNames = list("DFRobot新账套"),
+                          choiceValues =list("DFRobot新账套"),selected = list("DFRobot新账套")),
 
     # selectInput(inputId = "noticeShipmentERP",
     #             label = "ERP账套名",
-    #             choices = c("赛普集团新账套", "测试账套")),
+    #             choices = c("DFRobot新账套", "测试账套")),
     tsui::mdl_text(id = 'txt_noticeShipmentSourceSync_manually',label = '请输入发货通知单号'),
     shinyWidgets::actionBttn(inputId = 'btn_noticeShipmentSourceSync_log',label = '日志查询'),
     shinyWidgets::actionBttn(inputId = 'btn_noticeShipmentSourceSync_update',label = '更新同步状态'),
@@ -83,8 +83,8 @@ noticeShipmentUI_left <- function() {
 noticeShipmentUI_right <- function() {
   res <- tagList(
     tsui::mdl_ListChoose1(id ="noticeShipmentERP2",label =  "ERP账套名",
-                          choiceNames = list("赛普集团新账套"),
-                          choiceValues =list("赛普集团新账套"),selected = list("赛普集团新账套")),
+                          choiceNames = list("DFRobot新账套"),
+                          choiceValues =list("DFRobot新账套"),selected = list("DFRobot新账套")),
     tsui::mdl_text(id = 'txt_noticeShipmentERP_manually',label = '请输入发货通知单号'),
     shinyWidgets::actionBttn(inputId = 'btn_noticeShipmentERP_manually',label = '按单查询'),
 
